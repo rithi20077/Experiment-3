@@ -14,7 +14,35 @@
 7. Stop the program. 
 
 ## Program
+```
+num = input("Enter a number: ")  
+flag = 0  
+
+if num.isnumeric():  
+   z = int(num)  
+
+   if z == 2:  
+       flag = 1  
+   elif z > 2:  
+       for i in range(2, z // 2 + 1):  # Loop should include z//2
+           if z % i == 0:  
+               flag = 0  
+               break  
+       else:  
+           flag = 1  
+
+   if flag == 1:  
+       print("Prime Number")  
+   else:  
+       print("Not a Prime Number")  
+
+else:  
+   print("Enter a Positive Number")
+```
 
 ## Output
+
+<img width="362" height="127" alt="image" src="https://github.com/user-attachments/assets/b80d88fa-0f54-4322-a56c-af7974b27724" />
+
 
 ## Result
